@@ -12,7 +12,7 @@ class DataTransformation:
     def convert_to_features(self, data):
         input_encodings = self.tokenizer(data['dialogue'], max_length=1024, truncation=True)
         with self.tokenizer.as_target_tokenizer():
-            target_encodings = self.tokenizer(data['summary'], max_length=128, truncation=True)
+            target_encodings = self.tokenizer(data['summary'], max_length=300, truncation=True)
         return {
             'input_ids': input_encodings['input_ids'],
             'attention_mask': input_encodings['attention_mask'],

@@ -1,7 +1,13 @@
-# TextSummarizer-NLP-
-NLP Project
+# Intro to Text Summarizer NLP Application
+This application allows you to create a summarizer for a big text. It does provide basic UI. 
 
-## Workflows
+# Setup 
+Required version Python 3.8. It's tested using Conda
+
+# How to run
+python main.py
+
+## Detail Description
 1. Update config.yaml file
 2. Update params.yaml file
 3. Update entity
